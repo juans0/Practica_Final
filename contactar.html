@@ -40,30 +40,77 @@
                 </div>
             </header>
 
-            Contactar
-            Datos personales:
-            Nombre:
-            escribe tu nombre
-            Apellidos:
-            escribe tus apellidos
-            Email
-            escribe tu email
-            Teléfono:
-            escribe tu teléfono
-            Fecha de nacimiento
-            dd/mm/aaaa
-            Otros datos:
-            Por que quieres contactar:
-            Ofrecer un proyecto
-            Comprar mis diseños
-            Saber mas sobre mi
-            Otras razones
-            Mensaje:
-            Escribe tu mensaje
-            Apuntarme al boletín de noticias
-            ¿Aceptas las condiciones de privacidad?
-            Enviar
-            Borrar datos
+            <section>                
+                <form id="formulario">
+                    <h2>Contactar</h2>
+
+                    <fieldset class="datos">
+                        <legend>Datos personales:</legend>
+                    
+                        <ul>
+                            <li>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" placeholder="escribe tu nombre" name="nombre" id="nombre" value="" required/>
+                            </li>
+                            <li>
+                                <label for="apellidos">Apellidos:</label>                    
+                                <input type="text" placeholder="escribe tus apellidos" name="apellidos" id="apellidos" value="" required/>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>                    
+                                <input type="email" placeholder="escribe tu email" name="email" id="email" value="" required/>
+                            </li>
+                            <li>
+                                <label for="telefono">Teléfono:</label>                    
+                                <input type="tel" placeholder="escribe tu teléfono" name="telefono" id="telefono" value="" required/>
+                            </li>
+                            <li>
+                                <label for="nacimiento">Fecha de nacimiento</label>                    
+                                <input type="date" name="nacimiento" id="nacimiento" value="" required/>                        
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="otros">
+                        <legend>Otros datos:</legend>
+                    
+                        <ul>
+                            <li>
+                                <p>Por que quieres contactar:
+                                    <select>
+                                        <option>Ofrecer un proyecto</option>
+                                        <option>Comprar mis diseños</option>
+                                        <option>Saber mas sobre mi</option>
+                                        <option>Otras razones</option>
+                                    </select>
+                                </p>
+                            </li>
+                            <li>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea placeholder="Escribe tu mensaje" name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+                            </li>
+                        </ul>                                        
+
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="noticias" id="noticias"/>
+                                <label for="noticias">Apuntarme al boletín de noticias</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="privacidad" id="privacidad"/>
+                                <label>¿Aceptas las condiciones de privacidad?</label>
+                            </li>
+                            <li>
+                                <input class="boton" type="submit" value="Enviar"/>
+                            </li>
+                            <li>
+                                <input class="boton" type="reset" value="Borrar datos" />
+                            </li>
+                        </ul>
+                        
+                    </fieldset>
+                    
+                </form>
+            </section>
         </main>
 
         <footer>

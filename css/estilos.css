@@ -25,11 +25,18 @@ img:hover {
 
 *{box-sizing: border-box;}
 
-body {
+html, body {
     font-family: 'Baloo Da 2', 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    margin-bottom: 30px;
 }
 
 ul {
@@ -233,7 +240,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     background-color: #3a3939;
-    padding: 30px;
+    padding: 20px;
 }
 
 footer ul {
@@ -251,4 +258,76 @@ ul#fIzqdo {
 ul#fDcho {
     text-align: left;
     width: 50%;
+}
+
+/* CONTACTAR */
+#formulario {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #e8c841;
+    border-radius: 5px;
+    box-shadow: #000 3px 3px 10px;
+}
+
+#formulario > h2 {
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    color: #706f6f;
+    font-size: 1.8em;
+    padding-right: 60px;
+}
+
+fieldset ul {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: left;
+    color: #706f6f;
+    font-size: 0.6em;
+}
+
+.otros p {
+    margin: 10px;
+    font-size: 0.6em;
+}
+
+.boton {
+    width: 100%;
+    height: 3em;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.6em;
+    margin: 10px;
+}
+
+input[type="submit"] {
+    background-color: #88a70a;
+} 
+
+input[type="reset"] {
+    background-color: #ff005278;
+} 
+
+input[type="submit"]:hover {
+    background-color: green;
+} 
+
+input[type="reset"]:hover {
+    background-color: red;
+} 
+
+/* INICIO */
+#headInicio {
+    height: 100vh;
+    background-color: #88a70a;
 }
