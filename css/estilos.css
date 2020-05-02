@@ -29,6 +29,15 @@ body {
     font-family: 'Baloo Da 2', 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: #706f6f;
 }
 
 #menu {
@@ -36,6 +45,7 @@ body {
     border-bottom: 2px solid #fff;
 }
 
+/* CABECERA COMÚN */
 #head {
     background: url("../img/cabecera1.jpg") no-repeat 20% 30%; /*Con un valor '14% 84%', el punto a 14% a la derecha y 84% abajo de la imagen es colocado en el punto al 14% derecha y 84% abajo del área de espaciado*/
     background-color: #f0d44c;
@@ -68,12 +78,112 @@ h2 {
     padding-top: 25px;
 }
 
-ul {
-    list-style-type: none;
+/* ENLACES A REDES */
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: 27px;
 }
 
-p {
-    color: #706f6f;
+.redes a{
+    margin: 5px;
+}
+
+.facebook {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -178px -7px;
+    border-radius: 100%;
+}
+
+.gmail {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -7px -7px;
+    border-radius: 100%;
+}
+
+.google {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -121px -7px;
+    border-radius: 100%;
+}
+
+.twitter {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -292px -7px;
+    border-radius: 100%;
+}
+
+.linkedin {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -350px -7px;
+    border-radius: 100%;
+}
+
+.git {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -408px -7px;
+    border-radius: 100%;
+}
+
+.facebook:hover {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -178px -82px;
+    border-radius: 100%;
+}
+
+.gmail:hover {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -7px -82px;
+    border-radius: 100%;
+}
+
+.google:hover {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -121px -82px;
+    border-radius: 100%;
+}
+
+.twitter:hover {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -292px -82px;
+    border-radius: 100%;
+}
+
+.linkedin:hover {
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -350px -82px;
+    border-radius: 100%;
+}
+
+.git:hover{
+    width: 32px;
+    height: 32px;
+    background: url("../img/32pixel-icons.png");
+    background-position: -408px -82px;
+    border-radius: 100%;
 }
 
 /* NAV */
@@ -86,9 +196,17 @@ nav {
     flex-wrap: nowrap;
 }
 
-nav a {
+ul a {
     text-decoration: none;
     color: #fff;
+    padding: 15px;
+}
+
+nav li > a:hover {
+    background-color: #e8c841;
+    color: #706f6f;
+    border-radius: 12px;
+    padding: 10px 15px;
 }
 
 nav p {
@@ -100,7 +218,6 @@ nav p {
 
 nav li {
     display: inline;
-    padding: 15px;
     font-weight: bold;
     font-style: italic;
 }
