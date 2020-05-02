@@ -1,0 +1,137 @@
+/* 
+Fuente principal:    Baloo Da 2
+Fuente secundaria:  Roboto
+Fuente del sistema: sans-serif;
+
+Colores principales
+•	Color blanco:    #fff;
+•	color general de los textos:    #706f6f;
+•	Color amarillo:  #e8c841;
+•	Color gris claro:  #f2f2f2;
+•	Color fondo oscuro   #3a3939;
+•	Color borde verde pag inspiración y botón enviar: #88a70a;
+•	Verde oscuro hover enviar: Green
+•	Color botón borrar datos #ff005278
+•	Color hover botón borrar datos:  red 
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Baloo Da 2', 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    background-color: #3a3939;
+    border-bottom: 2px solid #fff;
+}
+
+#head {
+    background: url("../img/cabecera1.jpg") no-repeat 20% 30%; /*Con un valor '14% 84%', el punto a 14% a la derecha y 84% abajo de la imagen es colocado en el punto al 14% derecha y 84% abajo del área de espaciado*/
+    background-color: #f0d44c;
+    height: 250px;
+    background-size: cover;
+}
+
+#titulo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2.7em;
+}
+h2 {
+    font-size: 2.2em;
+}
+#head img {
+    height: 110px;
+    width: 110px;
+    float: left;
+    margin-top: 30px;
+}
+
+#head h1, #head h2 {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-shadow: black 3px 3px 3px;
+    padding-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: #706f6f;
+}
+
+/* NAV */
+nav {    
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav p {
+    color: #fff;
+    margin-right: 300px;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+nav li {
+    display: inline;
+    padding: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav img {
+    padding: 10px 0 20px 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3a3939;
+    padding: 30px;
+}
+
+footer ul {
+    color: #e8c841;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul#fIzqdo {
+   text-align: right;
+   width: 50%;
+}
+
+ul#fDcho {
+    text-align: left;
+    width: 50%;
+}
