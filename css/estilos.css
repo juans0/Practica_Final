@@ -33,6 +33,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    color: #706f6f;
 }
 
 main {
@@ -41,10 +42,6 @@ main {
 
 ul {
     list-style-type: none;
-}
-
-p {
-    color: #706f6f;
 }
 
 #menu {
@@ -75,7 +72,6 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    color: #706f6f;
 }
 
 #head img {
@@ -250,8 +246,7 @@ footer {
     background-color: #3a3939;
     padding: 20px;
 }
-
-footer ul {
+a, footer ul a {
     color: #e8c841;
     text-decoration: underline;
     font-style: italic;
@@ -287,7 +282,6 @@ ul#fDcho {
 
 fieldset {
     border: none;
-    color: #706f6f;
     font-size: 1.8em;
     padding-right: 60px;
 }
@@ -300,7 +294,6 @@ label {
     display: block;
     float: left;
     clear: left;
-    color: #706f6f;
     font-size: 0.6em;
 }
 
@@ -370,7 +363,7 @@ input[type="reset"]:hover {
 }
 
 #portafolio {
-    max-height: 1100px;
+    max-height: 1130px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -381,13 +374,53 @@ input[type="reset"]:hover {
     max-width: 255px;
     background-color: #f2f2f2;
     margin: 9px;
-    padding: 10px 10px 35px 10px;
+    padding: 10px 10px 20px 10px;
     border: 2px solid #fff;
     box-shadow: rgba(0,0,0,0.75) 1px 1px 5px 0px;
 }
 
 #portafolio img, #portafolio figcaption {
     width: 233px;
+    margin: 5px auto;
+}
+
+#portafolio a {
+    margin-left: 70px;
+    display: block; /* genera un cuadro de elemento de bloque */
+    margin-top: 15px;
+}
+
+/* DISEÑO */
+#cuerpo {
+    max-width: 1100px;
     margin: 0 auto;
-    color: #706f6f;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th {
+    border-bottom: 1px solid #706f6f;
+    background-color: #e8c841;
+    padding: 5px 50px 5px 10px;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid #706f6f;
+    padding: 40px 50px 40px 10px;
+}
+
+tr:nth-child(2n + 1){
+    background-color: #f2f2f2;
+}
+
+td:nth-child(7) img {
+    max-width: 50%;
+}
+
+td:last-child {
+    padding: 5px 0;
 }
