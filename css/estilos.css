@@ -384,7 +384,7 @@ input[type="reset"]:hover {
 }
 
 #portafolio a {
-    margin-left: 70px;
+    margin-left: 50px;
     display: block; /* genera un cuadro de elemento de bloque */
     margin-top: 15px;
 }
@@ -439,4 +439,76 @@ td:last-child {
 
 #inspiracion ul {
     list-style-type: disc;
+}
+
+abbr {
+    text-transform: uppercase;
+}
+
+ul#citas li {
+    list-style-type: none;      
+    background: url(../img/libro.png) 5px no-repeat;
+    background-size: 30px;
+    padding: 0 50px;
+}
+
+.autor {
+    font-style: italic;
+}
+
+.codigo {
+    background-color: #f2f2f2;
+    border-left: #88a70a 5px solid;
+    margin-left: 50px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.codigo pre {
+    margin-left: -130px;
+}
+
+.codigo p {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+blockquote {
+    text-align: right;
+    background-color: #f2f2f2;
+    border-right: 5px solid #e8c841;
+    font-size: 1.1em;
+    margin-left: 200px;
+    quotes: "\201C""\201D";
+    padding: 20px 80px;
+}
+
+blockquote:before {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: open-quote;
+    float: left;
+	font-size: 7em;
+	line-height: 0.1em;
+    margin-right: 0.35em;
+    margin-left: -0.50em;
+    margin-top: 60px;
+    /* margin-bottom: -30px; */
+    /* vertical-align: -0.4em; */
+    color: #e8c841;
+}
+
+blockquote:after {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	content: close-quote;
+	font-size: 7em;
+	line-height: 0.1em;
+	margin-right: -0.45em;
+    vertical-align: -0.4em;
+    color: #e8c841;
+}
+
+q {
+    quotes: "\201C""\201D";
 }
