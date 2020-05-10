@@ -13,11 +13,6 @@ Colores principales
 •	Verde oscuro hover enviar: Green
 •	Color botón borrar datos #ff005278
 •	Color hover botón borrar datos:  red 
-
-img:hover {
-  transform: scaleX(-1);
-}
-
 */
 
 @import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto');
@@ -363,7 +358,7 @@ input[type="reset"]:hover {
 }
 
 #portafolio {
-    max-height: 1130px;
+    max-height: 1140px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -376,6 +371,10 @@ input[type="reset"]:hover {
     padding: 10px 10px 20px 10px;
     border: 2px solid #fff;
     box-shadow: rgba(0,0,0,0.75) 1px 1px 5px 0px;
+} 
+
+#portafolio figure:hover {    
+    transform: scale(1.05);    
 }
 
 #portafolio img, #portafolio figcaption {
@@ -412,12 +411,29 @@ caption {
 th {
     border-bottom: 1px solid #706f6f;
     background-color: #e8c841;
-    padding: 5px;   
+    padding: 10px;   
 }
 
 td {
     border-bottom: 1px solid #706f6f;
     padding: 10px;
+}
+
+td a {
+    text-decoration: none;
+    background-color: #e8c841;
+    color: #706f6f;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 2px solid #e8c841;
+}
+
+td a:hover {
+    background-color: #fff;
+    color: #e8c841;
+    padding: 10px 30px;
+    border: 2px solid #e8c841;
 }
 
 tr:nth-child(2n + 1){
