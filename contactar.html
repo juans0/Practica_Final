@@ -58,11 +58,11 @@
                             </li>
                             <li>
                                 <label for="email">Email</label>                    
-                                <input type="email" placeholder="escribe tu email" name="email" id="email" value="" required/>
+                                <input type="email" placeholder="escribe tu email" name="email" id="email" value="" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
                             </li>
                             <li>
                                 <label for="telefono">Teléfono:</label>                    
-                                <input type="tel" placeholder="escribe tu teléfono" name="telefono" id="telefono" value="" required/>
+                                <input type="tel" placeholder="escribe tu teléfono" name="telefono" id="telefono" value="" pattern="[0-9]{9}" required/>
                             </li>
                             <li>
                                 <label for="nacimiento">Fecha de nacimiento</label>                    
@@ -75,40 +75,34 @@
                     
                         <ul>
                             <li>
-                                <p>Por que quieres contactar:
-                                    <select>
-                                        <option>Ofrecer un proyecto</option>
-                                        <option>Comprar mis diseños</option>
-                                        <option>Saber mas sobre mi</option>
-                                        <option>Otras razones</option>
-                                    </select>
-                                </p>
+                                <label for="contactar">Por que quieres contactar:</label>
+                                <select id="contactar" name="contactar">
+                                    <option>Ofrecer un proyecto</option>
+                                    <option>Comprar mis diseños</option>
+                                    <option>Saber mas sobre mi</option>
+                                    <option>Otras razones</option>
+                                </select>
                             </li>
                             <li>
                                 <label for="mensaje">Mensaje:</label>
                                 <textarea placeholder="Escribe tu mensaje" name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
                             </li>
                         </ul>                                        
-
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="noticias" id="noticias"/>
-                                <label for="noticias">Apuntarme al boletín de noticias</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="privacidad" id="privacidad"/>
-                                <label>¿Aceptas las condiciones de privacidad?</label>
-                            </li>
-                            <li>
-                                <input class="boton" type="submit" value="Enviar"/>
-                            </li>
-                            <li>
-                                <input class="boton" type="reset" value="Borrar datos" />
-                            </li>
-                        </ul>
-                        
                     </fieldset>
-                    
+                       
+                    <p class="check">
+                        <input type="checkbox" name="checkin" id="noticias" required checked/>
+                        <label for="noticias">Apuntarme al boletín de noticias</label>
+                    </p>  
+                    <p class="check"> 
+                        <input type="checkbox" name="checkin" id="privacidad" required checked/>
+                        <label for="privacidad">¿Aceptas las condiciones de privacidad?</label>
+                    </p>
+                
+                    <input class="boton" type="submit" value="Enviar"/>
+            
+                    <input class="boton" type="reset" value="Borrar datos" />
+ 
                 </form>
             </section>
         </main>
