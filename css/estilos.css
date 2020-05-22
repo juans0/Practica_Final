@@ -286,15 +286,16 @@ fieldset ul {
     margin-bottom: 10px;
 }
 
+ul li label {
+    width: 160px;
+    float: left;
+    text-align: justify;
+}
+
 li label {
     display: block;
     float: left;
     clear: left;
-    font-size: 0.6em;
-}
-
-.otros p {
-    margin: 10px;
     font-size: 0.6em;
 }
 
@@ -306,12 +307,6 @@ li label {
     margin-left: 60px;
     margin-top: 15px;
     padding: 10px;
-}
-
-ul li label {
-    width: 160px;
-    float: left;
-    text-align: justify;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], textarea {
@@ -379,7 +374,6 @@ input[type="checkbox"] + label {
     position: relative;
     display: flex;
     align-items: center;
-    transition: color 250ms cubic-bezier(.4,.0,.23,1);
 } 
 
 input[name="checkin"] {
